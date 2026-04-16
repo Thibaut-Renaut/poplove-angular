@@ -2,7 +2,7 @@
 
 Ce projet est développé en Angular 17.
 
-## Lance ment Rapide
+## Lancement Rapide
 
 L'API Node.js doit tourner simultanément sur le port `3000`.
 
