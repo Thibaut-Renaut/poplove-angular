@@ -1,27 +1,36 @@
-# FrontendAngular
+# PopLove Frontend - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Ce projet est développé en Angular 17.
 
-## Development server
+## Lance ment Rapide
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+L'API Node.js doit tourner simultanément sur le port `3000`.
 
-## Code scaffolding
+Pour ce frontend Angular, placez-vous dans le dossier \`Front_angular\` :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+cd "c:\Master\M1\S2\DFS\Projet TP\Front_angular"
+```
 
-## Build
+Installez les dépendances (si ce n'est pas déjà fait) :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install
+```
 
-## Running unit tests
+Lancez le serveur de développement :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm start
+```
 
-## Running end-to-end tests
+_Le site sera par défaut accessible sur `http://localhost:4200` (ou un port alternatif s'il est déjà occupé)._
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🛠️ Stack Technique
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Angular 17+** propulse l'application avec ses paradigmes récents :
+  - **Standalone Components** (plus de `NgModules` complexes).
+  - **Signals** : Pour une réactivité ultra rapide (ex: le panier et l'état de connexion de l'utilisateur).
+  - **RxJS & HttpClient** : Pour l'interrogation de l'API Node.js et l'intercepteur de token JWT.
+  - **Vanilla CSS** : Design intentionnellement géré avec une feuille de styles traditionnelle sans dépendance superflue.
+- **jwt-decode** : La seule bibliothèque externe côté front, pour décoder la session utilisateur depuis la chaîne JWT chiffrée.
